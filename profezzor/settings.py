@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "api",
+    "bot",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
