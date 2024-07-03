@@ -5,6 +5,6 @@ from ninja import NinjaAPI
 api = NinjaAPI()
 
 
-@api.get("/test1")
+@api.get("/testapi")
 def test(request):
     return JsonResponse({"message": "im fine!"})

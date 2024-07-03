@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import test
+from .views import api
 
 
 urlpatterns = [
-    path("test/", test),
+    path("api/", api.urls),  # Takes paths api instance of NinjaApi()
 ]
