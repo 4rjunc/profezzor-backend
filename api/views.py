@@ -7,7 +7,7 @@ api = NinjaAPI()
 
 @api.get("/testapi")
 def test(request):
-    return JsonResponse({"message": "im fine! dawg"})
+    return JsonResponse({"message": "im fine!"})
 
 
 # -----------------------------------------------------------------------
