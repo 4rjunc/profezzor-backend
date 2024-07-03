@@ -6,6 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # Install system dependencies and create virtual environment
+# postgresql-dev is also added incase postgres or supabase is used
 RUN apk add --no-cache \
     python3-dev \
     libffi-dev \
