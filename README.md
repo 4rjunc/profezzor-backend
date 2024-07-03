@@ -10,8 +10,6 @@ Profezzor is a product that helps college students find notes, model question pa
 
 This is the backend repo of Profezzor
 
-## Tech Stack
-
 ## Run Locally
 
 Set up virtual environment
@@ -37,3 +35,7 @@ Run django
 ```zsh
 python3 manage.py runserver
 ```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
