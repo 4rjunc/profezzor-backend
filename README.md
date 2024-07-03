@@ -36,6 +36,20 @@ Run django
 python3 manage.py runserver
 ```
 
+## Docker Setup
+
+Build Image
+
+```zsh
+docker-compose build
+```
+
+Run Container
+
+```zsh
+docker-compose up
+```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
