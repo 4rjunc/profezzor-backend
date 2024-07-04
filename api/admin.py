@@ -1,8 +1,8 @@
 from django.contrib import admin
 from .models import University, College, Department, Course, Student
 
-# Register your models here
+# List of models to register
+models = [University, College, Department, Course, Student]
 
-tables = ["University", "College", "Department", "Course", "Student"]
-for table in tables:
-    admin.site.register(table)
+for model in models:
+    admin.site.register(model)
