@@ -10,7 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+from dotenv import load_dotenv
+import os
+
 from pathlib import Path
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +30,7 @@ SECRET_KEY = "django-insecure-%s1jet&queq=h*ezay&b!z@q*i9&rn)@%1dckmkp3vk9rxy&pw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0"]
+ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1"]
 
 
 # Application definition
@@ -77,8 +82,12 @@ WSGI_APPLICATION = "profezzor.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "HOST": os.environ["HOST"],
+        "NAME": os.environ["DB_NAME"],
+        "USER": os.environ["DB_USER"],
+        "PASSWORD": os.environ["PASSWORD"],
+        "PORT": os.environ["PORT"],
     }
 }
 
